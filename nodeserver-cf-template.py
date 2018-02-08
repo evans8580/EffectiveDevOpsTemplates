@@ -149,13 +149,6 @@ t.add_resource(IAMPolicy(
 t.add_resource(ec2.SecurityGroup(
   "SecurityGroup",
   GroupDescription="Allow SSH and TCP/{} access".format(ApplicationPort),
-  SecurityGroupIngress=[…],
-  VpcId=Ref("VpcId"),
-))
-
-t.add_resource(ec2.SecurityGroup(
-  "SecurityGroup",
-  GroupDescription="Allow SSH and TCP/{} access".format(ApplicationPort),
   SecurityGroupIngress=[
     ec2.SecurityGroupRule(
       IpProtocol="tcp",
@@ -170,6 +163,7 @@ t.add_resource(ec2.SecurityGroup(
       CidrIp="0.0.0.0/0",
     ),
   ],
+  VpcId=Ref("VpcId"),
 ))
 
 ud = Base64(Join('\n', [
