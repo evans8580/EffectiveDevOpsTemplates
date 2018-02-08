@@ -59,6 +59,8 @@ environment = Environment(
         "helloworld"])},
   ],
 )
+
+buildspec = """version: 0.1
 phases:
   pre_build:
     commands:
