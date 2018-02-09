@@ -40,8 +40,8 @@ t.add_resource(BucketPolicy(
            Principal=Principal("AWS", ["127311923021"]),
            Resource=[Join('',
              [ARN(''),
-             Ref("S3Bucket"),
-             "/AWSLogs/384797526362/*"])],
+              Ref("S3Bucket"),
+              "/AWSLogs/384797526362/*"])],
          )
        ]
      )
