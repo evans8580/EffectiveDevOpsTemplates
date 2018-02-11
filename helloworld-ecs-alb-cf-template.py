@@ -25,7 +25,6 @@ from troposphere.cloudwatch import (
   MetricDimension,
 )
 
-
 t = Template()
 t.add_description("Effective DevOps in AWS: ALB for the ECS Cluster")
 
