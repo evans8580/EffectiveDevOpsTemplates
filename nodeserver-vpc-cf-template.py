@@ -179,7 +179,7 @@ t.add_resource(ec2.SecurityGroup(
       IpProtocol="tcp",
       FromPort="22",
       ToPort="22",
-      CidrIp=10.0.0.0/8,
+      CidrIp="10.0.0.0/8",
     ),
     ec2.SecurityGroupRule(
       IpProtocol="tcp",
