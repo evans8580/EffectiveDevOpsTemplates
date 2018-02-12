@@ -57,7 +57,7 @@ t.add_resource(ec2.SecurityGroup(
 
 t.add_resource(ec2.Instance(
   "server",
-  ImageId=" ami-a4e426b2",
+  ImageId="ami-a4e426b2",
   InstanceType="t2.micro",
   KeyName=Ref("KeyPair"),
   NetworkInterfaces=[
