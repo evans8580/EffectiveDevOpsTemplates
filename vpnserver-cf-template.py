@@ -22,12 +22,6 @@ t.add_parameter(Parameter(
    Type="AWS::EC2::VPC::Id",
    Description="VPC"
 ))
-t.add_parameter(Parameter(
-  "PublicSubnet",
-  Description="PublicSubnet",
-  Type="List<AWS::EC2::Subnet::Id>",
-  ConstraintDescription="PublicSubnet"
-))
 
 t.add_parameter(Parameter(
   "PublicSubnet",
